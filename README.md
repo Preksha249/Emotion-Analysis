@@ -66,10 +66,7 @@ or
    run on browser:
      - http://127.0.0.1:8000/docs - 
    testing with curl:
-     -         curl -X 'POST' \
-  'http://127.0.0.1:8000/analyze' \
-  -H 'Content-Type: application/json' \
-  -d '{"text": "I love FastAPI!"}'
+     -         curl -X 'POST' \  'http://127.0.0.1:8000/analyze' \ -H 'Content-Type: application/json' \-d '{"text": "I love FastAPI!"}'
 
       
        
