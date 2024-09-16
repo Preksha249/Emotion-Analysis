@@ -68,7 +68,13 @@ or
    testing with curl:
      -         curl -X 'POST' \  'http://127.0.0.1:8000/analyze' \ -H 'Content-Type: application/json' \-d '{"text": "I love FastAPI!"}'
 
-      
+Deployed in 'Railway'
+ - create a Procfile in the root directory. and then paste `web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app`
+     web: This tells Railway that this is the web process.
+     gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app: This command tells Railway to use gunicorn with 4 worker threads (-w 4) and to serve the FastAPI app using Uvicorn (main:app). Here, main is the Python file main.py, and app is the FastAPI instance in that file.
+ - then run the two commands:
+        `pip install gunicorn`
+        `pip freeze > requirements.txt`
        
 
 
