@@ -74,7 +74,12 @@ Deployed in 'Railway'
      gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app: This command tells Railway to use gunicorn with 4 worker threads (-w 4) and to serve the FastAPI app using Uvicorn (main:app). Here, main is the Python file main.py, and app is the FastAPI instance in that file.
  - then run the two commands:
         `pip install gunicorn`
+   
         `pip freeze > requirements.txt`
+
+
+:in railway... make sure to include the `gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app` in the command under startup command/run command. 
+     run : `https://emotion-analysis-backend-production.up.railway.app/analyze` by passing the raw body json { text:"I like this"}
        
 
 
