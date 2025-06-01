@@ -1,7 +1,7 @@
 # Emotion-Analysis
 
 1. SentimentAnalyser.java → SentimentAnalyser.py
-We can use nltk or vaderSentiment for sentiment analysis in Python.
+We can use nltk or vaderSentiment for sentiment analysis in Python. (https://medium.com/@piocalderon/vader-sentiment-analysis-explained-f1c4f9101cd9)
 
 2. SentimentClassification.java → SentimentClassification.py
 This class can be represented as a simple container for sentiment results:
